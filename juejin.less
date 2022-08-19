@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+// 文章列表
+.entry-list-container{
+    /* 标题 */
+    .title{
+        font-weight: bold;
+    }
+    
+    margin-left: 285px;
+    margin-top: 105px;
+    width: 700px;
+    height: 2866px;
+    background-color: #fff;
+    border:1px #666 solid;
+    //列表头部导航
+    .list-header{
+        border-bottom: 1px solid hsla(0,0%,59.2%,.2);
+    
+        //列表导航
+        ul.list-nav{
+
+            display: flex;
+            height: 50px;
+            align-items: center;
+            margin-left: 10px;
+
+            li{
+                a{
+                    display: block;
+                    width: 57px;
+                    height: 15px;
+                    text-align:center;
+                    border-right: 1px solid hsla(0,0%,59.2%,.2);
+                    font-size: 14px;
+                    color:#b1b6bf;
+
+                }  
+                &:last-child{
+                    a{
+                        border: none;
+                    }
+                } 
+            }
+
+            //选中状态
+            li.nav-item-active{
+                a{
+                    color:#1e80ff;
+                }
+            }
+                
+
+            
+        }
+    }
+
+    //文章列表主体
+    .entry-list-wrap{
+        
+        .item:hover{
+            cursor: pointer;
+        }
+
+        //源信息
+        .meta-container{
+            display: flex;
+            height: 22px;
+            margin:15px 0 5px 5px;
+            a{
+                display: block;
+                text-align:center;
+                border-right: 1px solid hsla(0,0%,59.2%,.2);
+                font-size: 13px;
+                color:#8e9195;
+                margin-left: 10px;
+                padding-right: 10px;
+
+                &:last-child{
+                    border:none;
+                }
+            }
+        }
+
+
+        .item{ 
+            .entry{
+                height: 141px;
+            }
+            box-sizing: border-box;
+            border-bottom: 1px solid hsla(0,0%,59.2%,.2);
+            
+            //广告栏
+            .advertisement{
+
+                // 主要内容 
+                .main{
+                    display: flex;
+                    // 文本信息 
+                    .info-box{
+                        margin:0 0 20px 15px;
+                        a{
+                            display: block;
+                        }
+                        //标题
+                        a.title{
+                            display: block;
+                            overflow: hidden;
+                            height: 24px;
+                            margin-bottom: 5px;
+                            font-size: 16px;
+                            color: #4E5969;
+                        }
+                        //简介
+                        a.description{
+                            font-size: 13px;
+                            line-height: 22px;
+                            font-weight: 400;
+                            color:#86909C;
+                        }
+                    }
+
+                    //封面图片
+                    img{
+                        width: 120px;
+                        height: 80px;
+                        margin:auto 20px 15px auto;
+                    }
+                }
+            }
+
+            //文章栏
+            .entry{
+                //文章元信息
+                .meta-container{
+                    a{
+                        
+                    }
+                }
+
+                //文章内容
+                .content-wrapper{
+                    display: flex;
+                    margin-left: 15px;
+                    margin-right: 20px;
+                    //主要内容
+                    .content-main{
+                        //标题
+                        .title{
+                            a{
+
+                            }
+                        }
+
+                        //摘要
+                        .abstract{
+                            a{
+                                font-size: 13px;
+                                line-height: 55px;
+                                font-weight: 400;
+                                color:#86909C;
+                            }
+                        }
+                        //动作列表
+                        ul.action-list{
+                            display: flex;
+                            margin-bottom: 15px;
+                            li{
+                                display: flex;
+                                align-items: center;
+                                margin-right: 15px;
+                                img{
+                                    width: 16px;
+                                    height: 16px;
+                                    line-height: 20px
+                                }
+                                span{
+                                    margin-left: 5px;
+                                    font-size: 13px;
+                                    color:#4E5969;
+                                }
+                            }
+                            //浏览量
+                            .view{
+                                
+                            }
+                            //点赞数
+                            .like{
+
+                            }
+                            //评论数
+                            .comment{
+
+                            }
+                    }
+                    
+
+
+                    }
+
+                    //封面图片
+                    img.cover{
+                        width: 120px;
+                        height: 80px;
+                        margin:0 0px 15px auto;
+                    }
+
+                }
+
+                
+            }
+        }
+    }
+}

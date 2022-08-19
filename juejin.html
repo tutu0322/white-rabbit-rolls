@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="juejin.css">
+</head>
+<body>
+    <!-- 文章列表开始 -->
+    <div class="entry-list-container">
+        <!-- 列表头部开始 -->
+        <header class="list-header">
+            <!-- 列表导航 -->
+            <ul class="list-nav">
+                <li class="nav-item-active">
+                    <a href="">推荐</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">最新</a>
+                </li>
+                <li class="nav-item">
+                    <a href="">热榜</a>
+                </li>
+            </ul>
+        </header>
+        <!-- 列表头部结束 -->
+
+        <!-- 文章列表主体开始 -->
+        <div class="entry-list-wrap">
+            <!-- 广告栏li开始 -->
+            <li class="item">
+                <!-- 第一个li为广告 -->
+                <div class="advertisement">
+                    <!-- 广告源信息 -->
+                    <div class="meta-container">
+                        <a href="" class="advertiser">沸点小助手</a>
+                        <a href="" class="date">n天前</a>
+                    </div>
+
+                    <!-- 广告内容 -->
+                    <div class="main">
+                        <!-- 文本信息 -->
+                        <div class="info-box">
+                            <!-- 标题 -->
+                            <a href="" target="_blank" class="title">3分钟阅读挑战 | 碎片时间不浪费！打开掘金app阅读文章，边学习边拿奖，简直不要太快乐！</a>
+                            <!-- 简介 -->
+                            <a href="" target="_blank" class="description">上下班坐地铁太无聊？睡觉前只知道刷短视频？那就来参加三分钟阅读挑战活动！随时随地掏出你的手机，打开掘金app阅读文章，留下你的学习脚印，简直不要太快乐！</a>
+                        </div>
+                        <!-- 封面图片 -->
+                        
+                        <img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b3932fb40d29454c9dedea3c66a1bbba~tplv-k3u1fbpfcp-no-mark:720:720:720:480.awebp?" alt="封面图片" class="cover">
+                    </div>
+                </div> 
+            </li>
+            <!-- 广告栏li结束 -->
+
+            <!-- 文章栏li开始 -->
+            <li class="item">
+                <div class="entry">
+                    <!-- 文章元信息 -->
+                    <div class="meta-container">
+                        <a href="" class="userName">用户名</a>
+                        <a href="" class="date">日期</a>
+                        <a href="" class="tag">tag</a>
+                    </div>
+
+                    <!-- 文章内容 -->
+                    <div class="content-wrapper">
+                        <!-- 主要内容 -->
+                        <div class="content-main">
+                            <!-- 标题 -->
+                            <div class="title">
+                                <a href="">高仿项目协作工具【Worktile】，从零带你一步步实现组织架构、网...</a>    
+                            </div>
+
+                            <!-- 摘要 -->
+                            <div class="abstract">
+                                <a href="">🏀在我们日常开发中，经常要和数据打交道，所以存储数据是很重要的事。如果你在处理...</a>
+                            </div>
+
+                            <!-- 动作列表 -->
+                            <ul class="action-list">
+                                <!-- 浏览量 -->
+                                <li class="view">
+                                    <img src="	https://lf3-cdn-tos.bytescm.com/obj/static/xitu_juejin_web/img/view.1eda8fa.png
+                                    " alt="">
+                                    <span class="view-data">999+</span>
+                                </li>
+
+                                <!-- 点赞数 -->
+                                <li class="like">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ9SURBVHgB7VZNbtNQEP7GP7AkN8DcoJyA5gRNTwCR2kqsUm9YEKEaoZRl0hUSBLWcAHOCpjdIT1AfIewgTjzM+AccxwHXLRYS/STnvbyxZ743b34e8L+DcEMMhu+fERk7DLTAuAwRjjz3eVD1+xsROD75eARmr7AczDlsVyVhoCbeDt85mXHmqLtkbst0Ko9jk31aVU9tAgvYW7FxYNJ3D85eufuTOZtKYiZu3X4z/LBdRU9tAia4E0+YL7I1z+3OmPEpkWOrip7aBED0RAcb7K8KeBb/alD+LQIa+TI48kxfuAfTVSlVMlybgAafpN1RYgujopwIOzpGEhuogGuloTc8bd2j5TmS8/VfHu7t5uUaeCaRygORPaqi00JFJAVn2UuNa667xXfEeJZ+rePR+Kool7gIQg67+RpBJTvo5QMoZHPXxFLW8Tld2lhoUqMOfg/JlKjdT2Pnpwf0bDlx3worG1EnPlENF0m5OayO5+7NyjRLHXgMfCsNQhumrBviRfRAhnqyu0KAYXmpcX/BfKKekL+dvBIheOUddkuNK7QO6A43ycXDvolYr5OtGTnlD3VU41rVZLdfccvIipMYDdYINAHZZJyicgR+4wQ0hbVH6Px7RBeNE9BM0lGbVxorTRNImhcxf8mvNxcDafOywBM0TUCqqEa/I09QbF6NECDQdjKuN6hGCJSlX2MENqXfGgFKS6hlmA9wi7hvLJ/qWEy/DL96AfMlEXWkU/mD0XiCkjud7kRk56iOltwRYz3ShM7KXlhpx4PheBR3qxzS6zbSi0YtyOZe9919D38ioNC2vIDl6NyQC2bWtzWVomvf93gWwg7KXH+HfwY/AGsn+Lf3Dim6AAAAAElFTkSuQmCC" alt="">
+                                    <span class="like-data">99+</span>
+                                </li>
+
+                                <!-- 评论数 -->
+                                <li class="comment">
+                                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKRSURBVHgB7VZNbtpQEJ55BlR15RvUOUHTG5ATJD1BQ9NU6gq8JKiKoyrJ0u2qUmkFOUGaE5TegJwg7gnqLRh7MvMwwiDbYHCUDZ9kHph5M9+bN38AO+zwzEAoiEv3xz4v/KAFiK/0S6J/qPCBoui+Y38cFlC3HgHH7Zk1FTXZUIt/mivEPVY6GFFw4difPNiWwNW3X+dLhj1iA3JqProXq7EQ8TVoz4A1147OWfPkAjYhcO1+twirt7FSEexPiG4+26cDyMEXt1s3AI7Z+LsZ4TEFB1newBzjf2B6Gi8kaqwyvEpHFgmVtjmxcTgm401R44I2G0M2KjpEV5W9KbG0koC+8znrt47d8GFDCAk+gJCQwNyvwqS1LLNwBbHbHuQ7G99bJ4rXgY4LRPGqz4T2koda8EAERl2zIrory7hArlBnDmdSDSbHyf8WrwDVNHKV0YOyQdGNXhAPMwlgnHKjaHQPJUNBOEjamL9fhI7SMt0/Q3uu08wjoJGWLk+FZQKefLyEwIKSETcxwTCbANFfWQLAIygZCFifrjkEQq73WgixCaUziHWi+p1JIC65Hj/mpdt1oCQkq2u7+f4uk4BAGo8minguFQy2hFRXvlonqTuXgK5aRLqHc/m8vXK7LdgCE6hYskolTGtqqWnYsU+dmITJrnCvv/7sOXKSDVCBiScrJgeVBHInIokDuYqEsB5KQqgMl7uk1A4DwrpCkFLLExL0x1HAWfXCr2H4X2TOWh+wEAGB7pBQcRITzgwymvmxEilcVtp+cX1cfs20Drv2VKyDSVUPI4Ij3lRPEfFJclzXEvIQlXhioZ4QYaNjn/Q3IrAMiQmDA0wB+QGEflr/ENK6xXOXFS8QRQdFx/YdnhyP1D0hcwr1KvEAAAAASUVORK5CYII=" alt="">
+                                    <span class="comment-data">99+</span>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+                        <!-- 封面图片 -->
+                        <img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/574bf09a0db64f1e9e2ee2a0a78e60a1~tplv-k3u1fbpfcp-no-mark:240:240:240:160.awebp?" alt="封面图片" class="cover">                        
+
+                    </div>
+
+                </div>
+            </li>
+
+            <li class="item">
+
+            </li>
+
+            <!-- 文章栏li结束 -->
+
+            
+        </div>
+        <!-- 文章列表主体结束 -->
+
+    </div>
+    <!-- 文章列表结束 -->
+</body>
+</html>

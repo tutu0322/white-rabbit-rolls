@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.entry-list-container {
+  /* 标题 */
+  margin-left: 285px;
+  margin-top: 105px;
+  width: 700px;
+  height: 2866px;
+  background-color: #fff;
+  border: 1px #666 solid;
+}
+.entry-list-container .title {
+  font-weight: bold;
+}
+.entry-list-container .list-header {
+  border-bottom: 1px solid hsla(0, 0%, 59.2%, 0.2);
+}
+.entry-list-container .list-header ul.list-nav {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  margin-left: 10px;
+}
+.entry-list-container .list-header ul.list-nav li a {
+  display: block;
+  width: 57px;
+  height: 15px;
+  text-align: center;
+  border-right: 1px solid hsla(0, 0%, 59.2%, 0.2);
+  font-size: 14px;
+  color: #b1b6bf;
+}
+.entry-list-container .list-header ul.list-nav li:last-child a {
+  border: none;
+}
+.entry-list-container .list-header ul.list-nav li.nav-item-active a {
+  color: #1e80ff;
+}
+.entry-list-container .entry-list-wrap .item:hover {
+  cursor: pointer;
+}
+.entry-list-container .entry-list-wrap .meta-container {
+  display: flex;
+  height: 22px;
+  margin: 15px 0 5px 5px;
+}
+.entry-list-container .entry-list-wrap .meta-container a {
+  display: block;
+  text-align: center;
+  border-right: 1px solid hsla(0, 0%, 59.2%, 0.2);
+  font-size: 13px;
+  color: #8e9195;
+  margin-left: 10px;
+  padding-right: 10px;
+}
+.entry-list-container .entry-list-wrap .meta-container a:last-child {
+  border: none;
+}
+.entry-list-container .entry-list-wrap .item {
+  box-sizing: border-box;
+  border-bottom: 1px solid hsla(0, 0%, 59.2%, 0.2);
+}
+.entry-list-container .entry-list-wrap .item .entry {
+  height: 141px;
+}
+.entry-list-container .entry-list-wrap .item .advertisement .main {
+  display: flex;
+}
+.entry-list-container .entry-list-wrap .item .advertisement .main .info-box {
+  margin: 0 0 20px 15px;
+}
+.entry-list-container .entry-list-wrap .item .advertisement .main .info-box a {
+  display: block;
+}
+.entry-list-container .entry-list-wrap .item .advertisement .main .info-box a.title {
+  display: block;
+  overflow: hidden;
+  height: 24px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #4E5969;
+}
+.entry-list-container .entry-list-wrap .item .advertisement .main .info-box a.description {
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #86909C;
+}
+.entry-list-container .entry-list-wrap .item .advertisement .main img {
+  width: 120px;
+  height: 80px;
+  margin: auto 20px 15px auto;
+}
+.entry-list-container .entry-list-wrap .item .entry .content-wrapper {
+  display: flex;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+.entry-list-container .entry-list-wrap .item .entry .content-wrapper .content-main .abstract a {
+  font-size: 13px;
+  line-height: 55px;
+  font-weight: 400;
+  color: #86909C;
+}
+.entry-list-container .entry-list-wrap .item .entry .content-wrapper .content-main ul.action-list {
+  display: flex;
+  margin-bottom: 15px;
+}
+.entry-list-container .entry-list-wrap .item .entry .content-wrapper .content-main ul.action-list li {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.entry-list-container .entry-list-wrap .item .entry .content-wrapper .content-main ul.action-list li img {
+  width: 16px;
+  height: 16px;
+  line-height: 20px;
+}
+.entry-list-container .entry-list-wrap .item .entry .content-wrapper .content-main ul.action-list li span {
+  margin-left: 5px;
+  font-size: 13px;
+  color: #4E5969;
+}
+.entry-list-container .entry-list-wrap .item .entry .content-wrapper img.cover {
+  width: 120px;
+  height: 80px;
+  margin: 0 0px 15px auto;
+}
